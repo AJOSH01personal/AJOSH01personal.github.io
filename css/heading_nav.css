@@ -1,0 +1,98 @@
+/* Navigation baseline (mobile-first) */
+
+/* Page heading */
+.about-section {
+  background: #fff;        /* or a subtle background */
+  padding: 1rem 0;         /* consistent spacing */
+  border-bottom: 2px solid #007bff; /* optional divider */
+}
+
+.about-section h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #007bff;
+  text-align: center;
+}
+
+.nav-section nav {
+  display: flex;
+  justify-content: flex-end; /* push hamburger to the right */
+  align-items: center;
+  padding: 0.75rem 1rem;
+  min-height: 50px; /* consistent vertical space */
+  position: relative;
+}
+
+.hamburger {
+  display: block;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px; /* fixed size to match link height */
+  text-align: center;
+}
+
+/* Nav links hidden until toggled */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%; /* dropdown below nav bar */
+  right: 0;
+  background: #f9f9f9;
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  list-style: none;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0.5rem 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.placeholder {
+  pointer-events: none; /* disables clicking */
+  cursor: default;      /* no pointer hand */
+  user-select: none;    /* prevent text highlighting */
+  opacity: 0.6;         /* optional visual cue */
+}
+
+/* Desktop layout overrides */
+@media screen and (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-section nav {
+    justify-content: center; /* center links under heading */
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+    position: static;
+    background: none;
+    border: none;
+    padding: 0;
+    width: auto;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+}

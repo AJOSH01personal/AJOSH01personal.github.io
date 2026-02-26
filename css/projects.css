@@ -1,0 +1,55 @@
+/* Base styles (already unified via heading_nav.css) */
+
+/* Projects container */
+.projects-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Individual project cards */
+.project-card {
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project-card h2 {
+  color: #007bff;
+  margin-top: 0;
+}
+
+.project-card p {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Optional tags or skills for projects */
+.project-tags {
+  margin-top: 10px;
+}
+
+.project-tags span {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Desktop grid override */
+@media screen and (min-width: 1024px) {
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two columns */
+    gap: 20px;
+  }
+}

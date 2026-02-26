@@ -3,11 +3,31 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="/css/heading_nav.css">
+        <link rel="stylesheet" href="/css/universal.css">
+        <link rel="stylesheet" href="/css/resume.css">
         <title>John Doe - Resume</title>
     </head>
 
     <body>
+                <!-- Page heading -->
+  <div class="about-section">
+    <h1>Resume from John Doe</h1>
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav-section">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/html/index.html">About</a></li>
+        <li><a href="/html/projects.html">Projects</a></li>
+        <li><a href="/html/resume.html">Resume</a></li>
+        <li><a class="placeholder">Other Links TBA</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu">&#9776;</button>
+    </nav>
+  </div>
+
         <main class="container">
             <section class="header">
                 <h1>John Doe</h1>
@@ -65,6 +85,7 @@
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
+                        <li>JS</li>
                         <li>Git</li>
                     </ul>
                 </div>
@@ -74,16 +95,17 @@
                 <div class="item">
                     <h3>Resume Project</h3>
                     <p>
-                        This project tested my experience in HTML. 
+                        This project tested my experience in HTML & CSS. 
                     </p>
                 </div>
                 <div class="item">
                     <h3>GitHub Projects</h3>
                     <p>
-                         Please see my github projects <a href="projects.html"> here </a> ! 
+                         Please see my github projects <a href="/html/projects.html"> here </a> ! 
                     </p>
                 </div>
             </section>
         </main>
+        <script src="/js/nav.js"></script>
     </body>
 </html>

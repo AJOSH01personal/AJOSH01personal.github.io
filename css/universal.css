@@ -1,0 +1,55 @@
+/* Universal base styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin: 0;
+  color: #007bff; /* unified accent color */
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Shared container look */
+.container,
+.about-container,
+.projects-container,
+.resume-container {
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Accent utilities */
+.blurb {
+  font-style: italic;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+/* Reusable tag/label style (skills, project tags, etc.) */
+.tag {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 4px;
+  font-size: 12px;
+}

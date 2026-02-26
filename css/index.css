@@ -1,4 +1,4 @@
-/*
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -8,89 +8,20 @@ body {
   background-color: #f4f4f4;
 }
 
-.container {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  border: 4px solid #007bff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-
-.details {
-    border: 4px solid #007bff;
-    border-radius: 8px;
-    padding: 10px;
-    background: #007bff;
-    color:#f4f4f4;
-}
-
-.blurb {
-  font-style: italic;
-}
-
-.title {
- font-weight: bold;
-}
-
 h1, h2 {
-    color: #007bff;
-    text-align: center;
-}
-
-
-
-/* Desktop layout */
-/*
-@media screen and (min-width: 1000px) {
-
-  .container {
-    max-width: 1000px;
-    border: 6px solid #007bff;
-  }
-
-  .info-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .details {
-    border: 4px solid #007bff;
-    border-radius: 8px;
-    padding: 10px;
-    background: #007bff;
-    color:#f4f4f4;
-    align-items: center;
-    justify-content: center;
-   }
-
-  .info-block h2,
-  .info-block .title {
-    margin: 0;
-  }
-}
-*/
-
-body {
-  font-family: Arial, sans-serif;
+  text-align: center;
   margin: 0;
-  padding: 0;
-  background: #f4f4f4;
-  color: #333;
 }
 
+h1 {
+  color: #007bff;
+}
 
-/* Container for both sides */
+h2 {
+  color: #f4f4f4;
+}
+
+/* About container (split layout) */
 .about-container {
   min-height: 100vh;
   display: flex;
@@ -110,8 +41,7 @@ body {
   justify-content: center;
 }
 
-
-/* Left side: profile */
+/* Profile side */
 .profile-side {
   background: #fff;
   text-align: center;
@@ -132,9 +62,9 @@ body {
   margin: 0;
 }
 
-/* Right side: description */
+/* Description side */
 .description-side {
-  background: #007bff; /* orange tone */
+  background: #007bff;
   color: #fff;
   padding: 40px 30px;
   text-align: center;
@@ -151,6 +81,7 @@ body {
   line-height: 1.6;
 }
 
+/* Social links */
 .social-links a {
   margin-right: 15px;
   color: #fff;
@@ -162,47 +93,19 @@ body {
   text-decoration: underline;
 }
 
-h1 {
-    color: #007bff;
-    text-align: center;
-}
-
-h2 {
-  color: #f4f4f4;
-  text-align: center;
-}
-
+/* Desktop layout overrides */
 @media screen and (min-width: 1024px) {
+  
   .about-container {
-    display: flex;
     flex-direction: row;
     height: 100vh;
-    width: 100vw; /* full viewport width */
-    margin: 0;     /* remove horizontal centering */
-    max-width: none; /* remove width cap */
+    width: 100vw;
+    margin: 0;
+    max-width: none;
   }
 
   .profile-side,
   .description-side {
-    flex: 1;
     height: 100%;
-  }
-
-  .profile-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-  }
-
-  .description-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: #007bff;
-    color: #fff;
-    padding: 40px;
-    text-align: center;
   }
 }
